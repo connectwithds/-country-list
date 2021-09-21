@@ -3,8 +3,8 @@ import React from "react";
 const CountryDetails = (props) => {
   return (
     <div className="container">
-      <div className="container-region">
-        <div className="region-card-heading">
+      <div className="container-region" style={{ width: "400px" }}>
+        <div className="region-card-heading" style={{ width: "380px" }}>
           {props.reg}/{props.countryname}
         </div>
         {props.country
@@ -12,7 +12,7 @@ const CountryDetails = (props) => {
           .map((el, id) => {
             return (
               <>
-                <div className="country-card-detail">
+                <div className="country-card-detail" style={{ width: "380px" }}>
                   <img
                     src={el.flag}
                     className="flag"
@@ -40,7 +40,7 @@ const CountryDetails = (props) => {
                   </div>
                 </div>
 
-                <div className="country-card-detail">
+                <div className="country-card-detail" style={{ width: "380px" }}>
                   <div className="border">
                     Demonym
                     <br />
@@ -53,7 +53,7 @@ const CountryDetails = (props) => {
                   </div>
                 </div>
 
-                <div className="country-card-detail">
+                <div className="country-card-detail" style={{ width: "380px" }}>
                   <div className="border">
                     Currency
                     <br />
